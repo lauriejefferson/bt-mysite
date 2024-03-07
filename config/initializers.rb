@@ -41,13 +41,12 @@ Bridgetown.configure do |config|
   #
   # init :ssr
   #
-
+    init :heartml
   # Uncomment to use file-based dynamic template routing via Roda (make sure you
   # uncomment the gem dependency in your `Gemfile` as well):
   #
   # init :"bridgetown-routes"
   #
-
   # We also recommend that if you're using Roda routes you include this plugin
   # so you can get a generated routes list in `.routes.json`. You can then run
   # `bin/bridgetown roda:routes` to print the routes. (This will require you to

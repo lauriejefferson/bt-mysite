@@ -6,7 +6,12 @@ title: Posts
 <ul>
   {% for post in collections.posts.resources %}
     <li>
-      <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
+        <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
+        <div class="tags">
+          {% for tag in post.data.tags %}
+            <small>{{ tag }}</small>
+          {% endfor %}
+        </div>
     </li>
   {% endfor %}
 </ul>

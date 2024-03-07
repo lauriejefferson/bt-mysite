@@ -1,0 +1,35 @@
+<figure>
+  <slot></slot>
+  <figcaption server-effect="$show(.show_caption); @textContent = .caption"></figcaption>
+</figure>
+
+<style>
+  :host {
+    display: block;
+    margin-block: var(--size-8);
+  }
+
+  ::slotted(img) {
+    display: block;
+    margin-inline: auto;
+    box-shadow: 0px 10px 18px color-mix(in oklch, var(--dark-pop-color), black 55%);
+  }
+
+  figure {
+    margin: 0;
+    margin-inline: calc(0rem - var(--main-padding-inline));
+  }
+  
+  figcaption {
+    margin-block: var(--size-3) 0;
+    padding-inline: calc(var(--main-padding-inline) / 2);
+    text-align: center;
+    font-size: var(--font-size-1);
+    font-style: italic;
+    color: var(--emphasis-color);
+
+    :host([caption-right]) & {
+      text-align: right
+    }
+  }
+</style>

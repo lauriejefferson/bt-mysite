@@ -33,7 +33,7 @@ ul {
 }
 
 li {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 
 a {
@@ -100,4 +100,14 @@ hr {
   border: none;
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
+}
+
+.tags {
+  margin: 0.8em 0;
+}
+
+small {
+  padding: 0.5em 1em;
+  background-color: #34113F;
+  color: #F0F9F8;
 }

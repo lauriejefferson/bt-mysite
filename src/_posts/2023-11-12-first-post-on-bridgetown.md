@@ -1,11 +1,16 @@
 ---
 layout: post
-title:  "Another Post on Bridgetown"
+title:  "First Post on Bridgetown"
 date:   2023-11-12 13:36:06 -0500
 categories: updates
+tags: ["post", "ruby"]
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `bin/bridgetown start`, which launches a web server and auto-regenerates your site when a file is updated.
+
+<image-figure caption="Photo by John Jennings for Unsplash" markdown="block">
+  ![An Image](/images/creative1.jpg)
+</image-figure>
 
 Bridgetown requires blog post files to be named according to the following format:
 
