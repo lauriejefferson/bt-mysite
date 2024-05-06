@@ -7,13 +7,17 @@ title: Posts
   {% for post in collections.posts.resources %}
     <li>
         <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
+        <p>{{ post.date }}</p>
+        <p>{{ post.summary }}</p>
         <div class="tags">
           {% for tag in post.data.tags %}
-            <small>{{ tag }}</small>
+            {% if tag != 'post' %}
+              <small>{{ tag }}</small>
+            {% endif %}
           {% endfor %}
         </div>
     </li>
   {% endfor %}
 </ul>
 
-If you have a lot of posts, you may want to consider adding [pagination](https://www.bridgetownrb.com/docs/content/pagination)!
+
