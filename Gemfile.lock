@@ -108,9 +108,10 @@ GEM
 
 PLATFORMS
   x86_64-darwin-22
+  x86_64-darwin-23
 
 DEPENDENCIES
-  bridgetown (~> 1.3.1)
+  bridgetown (~> 1.3.4)
   heartml (~> 1.0.0.beta10)
   puma (< 7)
 
